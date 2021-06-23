@@ -1,0 +1,109 @@
+:root {
+    --violet-color: hsl(263, 55%, 52%);
+    --grayishblue-color: hsl(217, 19%, 35%);
+    --blackishblue-color: hsl(219, 29%, 14%);
+    --white-color: hsl(0, 0%, 100%);
+    --Lightgray-color: hsl(0, 0%, 81%);
+    --Lightgrayishblue-color: hsl(210, 46%, 95%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	font-family:'Barlow Semi Condensed', sans-serif;
+}
+body {
+	background-color: var(--Lightgrayishblue-color) ;
+	
+}
+.container {
+	width: 50%;
+	min-width: 375px;
+	margin: 50px auto;
+	line-height: 15px;
+	font-size: 1.3rem;
+}
+.container .container_section {
+	display: block;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 20px 25px 20px;
+	border-radius: 10px;
+}
+.container .daniel {
+	background-color: var(--violet-color);
+	background-image: url(/images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: right 15px top;
+
+}
+.container .jonathan {
+	background-color: var(--grayishblue-color);
+}
+.container .jeanette, .kira  {
+	background-color: var(--white-color);
+}
+.container .patrick {
+	background-color: var(--blackishblue-color);
+}
+
+.container--header {
+	padding: 10px 5px ;
+	display: flex;
+	align-items: center;
+	width: 50%;
+}
+.container--header img {
+	display: inline;
+	border-radius: 50px;
+	margin: 0 10px;
+	width:20% ;
+}
+.daniel .container--header img, .patrick .container--header img {
+	border: solid #A239EA;
+}
+.daniel .container--header p > span, .jonathan .container--header p > span, .patrick .container--header p > span {
+	color: white;
+}
+.daniel .container--header p, .jonathan .container--header p, .patrick .container--header p {
+	color: var(--Lightgray-color);
+	font-weight: bold;
+}
+.jeanette .container--header p > span, .kira .container--header p > span {
+	color: var(--blackishblue-color);
+	font-weight: bold;
+}
+.jeanette .container--header p, .kira .container--header p {
+	color: var(--grayishblue-color);
+}
+.container--main {
+	margin: 0 auto;
+	padding: 10px 20px;
+}
+.daniel .container--main p > span, .jonathan .container--main p > span, .patrick .container--main p > span {
+	color: white;
+	font-weight: 500;
+	font-size: 2.3rem;
+	line-height: 3.0rem;
+}
+.daniel .container--main p, .jonathan .container--main p, .patrick .container--main p {
+	color: var(--Lightgray-color);
+	font-size: 1.4rem;
+	line-height: 2.0rem;
+}
+.jeanette .container--main p > span, .kira .container--main p > span {
+	color: var(--blackishblue-color);
+	font-weight: 500;
+	font-size: 2.3rem;
+	line-height: 3.0rem;
+}
+.jeanette .container--main p, .kira .container--main p {
+	color: var(--grayishblue-color);
+	font-size: 1.4rem;
+	line-height: 2.0rem;
+}
+
+
+
